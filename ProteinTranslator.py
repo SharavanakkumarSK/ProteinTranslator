@@ -55,13 +55,17 @@ def translation(dna_seq):
             
 # Type -1 input, for entering the sequence in a query box:
 
-# dna_seq = str(input("DNA Sequence: ")).upper()
-# result_tscn = transcription(dna_seq)
-# print(result_tscn)
-# result_tsln = translation(dna_seq)
-# print(result_tsln)
+dna_seq = str(input("DNA Sequence: ")).upper()
+result_tscn = transcription(dna_seq)
+print(result_tscn)
+result_tsln = translation(dna_seq)
+print(result_tsln)
 
 # Type - 2 input, for opening the sequence in a text file:
 
-# inp_seq = open("'_directoryname_':\'_filename_'.txt", "r")
-# dna_seq = inp_seq.read()
+inp_seq = open("'_directoryname_':\'_filename_'.txt", "r")
+dna_seq = inp_seq.read()
+result_tscn = transcription(dna_seq)
+print(result_tscn)
+result_tsln = translation(dna_seq)
+print(result_tsln)
