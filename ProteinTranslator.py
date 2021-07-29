@@ -53,7 +53,7 @@ def translation(dna_seq):
             no_amino_acids = len(protein_seq)
             print("No of Amino Acids:", no_amino_acids)
             
-# Type -1 input, for entering the sequence in a query box:
+# Type - 1 input, for entering the sequence in a query box:
 
 dna_seq = str(input("DNA Sequence: ")).upper()
 result_tscn = transcription(dna_seq)
